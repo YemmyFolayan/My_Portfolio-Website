@@ -1,0 +1,39 @@
+body .preloader .text {
+  font-family: Courier, monospace;
+  overflow: hidden;
+  letter-spacing: 2px;
+  animation: typing 3s steps(30, end), blink 0.75s infinite;
+  white-space: nowrap;
+  word-break: break-all;
+  font-size: 30px;
+  font-weight: 700;
+  border-right: 4px solid orange;
+  box-sizing: border-box;
+  text-align: center;
+}
+/* @media screen and (max-width: 500px) {
+  body .preloader .text {
+    font-family: Courier, monospace;
+    overflow: scroll;
+    white-space: nowrap;
+    font-size: 15px;
+  }
+} */
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
